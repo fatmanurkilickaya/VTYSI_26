@@ -1,0 +1,11 @@
+create database ogrenci;
+use ogrenci;
+create table gorencibilgileri(
+ogrNo int Primary Key NOT NULL IDENTITY(1,1),
+adi nvarchar(20),
+soyadi varchar(100),
+dogumTarihi nvarchar(100),
+eposta nvarchar(200)
+);
+
+select * from gorencibilgileri
