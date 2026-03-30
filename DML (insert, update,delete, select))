@@ -1,0 +1,42 @@
+use KutuphaneSistemi
+
+select * from Uyeler
+insert into Uyeler (uyeAdi, uyeSoyadi,adresNo) values ('Bedirhan','Çiftç',1)
+select * from Adresler
+select * from emanet
+insert into emanet values(2024-01-01,2025-01-01,1,'A123')
+insert into emanet values(2023-01-01,2025-01-01,2,'B123')
+insert into emanet(emanetTarihi,teslimTarihi) values(2023-01-01,2025-01-01)
+select * from kategori
+insert into kategori values('matematik')
+insert into kategori values('bilgisayar')
+select * from kategori_kitap
+insert into kategori_kitap values('A123',2)
+
+
+select * from kitaplar
+insert into kitaplar values('A123','vtys I', 300, 2025-11-11)
+insert into kitaplar values('B123','vtys II', 400, 2026-01-11)
+insert into kitaplar values('C345','Çalıkuşu', 550, 2025-01-02)
+select * from kutuphane
+insert into kutuphane values(4,'Karamercan','Mevlana mahallesi kütüphanesi',1)
+insert into kutuphane values(1,'Kayü','kayseri şehrinde',1)
+insert into kutuphane values(2,'İtü','istanbul şehrinde',2)
+select * from yazarlar
+insert into yazarlar values('oguz', 'atay')
+select * from kitap_kutuphane
+insert into kitap_kutuphane values(300,'A123',1)
+insert into kitap_kutuphane values (3,'C345',1)
+select * from kutuphane
+insert into kutuphane values(3,'odtu','ankara sehrinde',1)
+insert into Adresler values ('Kayseri','mevlana',38,3800,'Türkiye','15 Temmuz')
+insert into Adresler(sehir,ulke) values ('istanbul','türkiye')
+
+insert into Uyeler values('fatmanur','kılıçkaya',null,null,null,1)
+
+insert into Uyeler values('hediye','öz','','','',2)
+
+select * from Uyeler
+update uyeler set eposta ='fnurkilickaya@kayseri.edu.tr' where uyeNo in(1,2)
+
+delete from Uyeler where uyeNo=3
