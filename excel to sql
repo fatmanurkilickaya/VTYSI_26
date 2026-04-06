@@ -1,0 +1,67 @@
+excel dosyası kodu
+=" INSERT INTO Adresler Values ('"&B2&"','"&C2&"', "&D2&","&E2&",'"&F2&"','"&G2&"'); "
+
+
+ INSERT INTO Adresler Values ('Ankara','Çankaya', 95,36350,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('İzmir','Konak', 87,70189,'Türkiye','Şehitler Cd.'); 
+ INSERT INTO Adresler Values ('Konya','Selçuklu', 4,12323,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('İstanbul','Bakırköy', 26,70529,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('Gaziantep','Oğuzeli', 36,1877,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Konya','Meram', 36,20320,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('Ankara','Çankaya', 49,13467,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('Antalya','Muratpaşa', 94,59649,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Konya','Selçuklu', 71,38949,'Türkiye','Şehitler Cd.'); 
+ INSERT INTO Adresler Values ('Adana','Çukurova', 91,9146,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('Antalya','Muratpaşa', 110,30987,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Konya','Meram', 59,47266,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('Adana','Çukurova', 86,35818,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('İzmir','Balçova', 94,32267,'Türkiye','Mevlana Cd.'); 
+ INSERT INTO Adresler Values ('Konya','Meram', 119,72324,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('İstanbul','Beşiktaş', 106,5924,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('Konya','Meram', 9,28680,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('Bursa','Mudanya', 51,59246,'Türkiye','Gül Sk.'); 
+ INSERT INTO Adresler Values ('İzmir','Karşıyaka', 96,72651,'Türkiye','Gül Sk.'); 
+ INSERT INTO Adresler Values ('Konya','Karatay', 52,47324,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Gaziantep','Şahinbey', 97,7981,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('İzmir','Karşıyaka', 102,55710,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Konya','Meram', 77,60641,'Türkiye','Gül Sk.'); 
+ INSERT INTO Adresler Values ('İstanbul','Kadıköy', 88,69868,'Türkiye','Gül Sk.'); 
+ INSERT INTO Adresler Values ('Adana','Seyhan', 38,56261,'Türkiye','Mevlana Cd.'); 
+ INSERT INTO Adresler Values ('İstanbul','Üsküdar', 65,23619,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Antalya','Kepez', 20,48880,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('İstanbul','Bakırköy', 42,63119,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Adana','Yüreğir', 31,8346,'Türkiye','Şehitler Cd.'); 
+ INSERT INTO Adresler Values ('Ankara','Çankaya', 94,63935,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('İzmir','Karşıyaka', 85,61662,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Antalya','Aksu', 28,70873,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('Antalya','Aksu', 86,48548,'Türkiye','Mimar Sinan Cd.'); 
+ INSERT INTO Adresler Values ('Gaziantep','Şahinbey', 32,29165,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('İstanbul','Bakırköy', 71,30702,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('İstanbul','Kadıköy', 91,81160,'Türkiye','Fatih Sk.'); 
+ INSERT INTO Adresler Values ('Ankara','Çankaya', 111,43172,'Türkiye','Mimar Sinan Cd.'); 
+ INSERT INTO Adresler Values ('Bursa','Yıldırım', 86,63319,'Türkiye','Mimar Sinan Cd.'); 
+ INSERT INTO Adresler Values ('İzmir','Balçova', 74,61348,'Türkiye','Mevlana Cd.'); 
+ INSERT INTO Adresler Values ('Konya','Selçuklu', 13,13774,'Türkiye','Barış Cd.'); 
+ INSERT INTO Adresler Values ('Adana','Sarıçam', 53,60984,'Türkiye','Atatürk Cd.'); 
+ INSERT INTO Adresler Values ('Ankara','Çankaya', 52,44919,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Bursa','Osmangazi', 25,69559,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Konya','Selçuklu', 36,60355,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Gaziantep','Oğuzeli', 13,7767,'Türkiye','Mimar Sinan Cd.'); 
+ INSERT INTO Adresler Values ('İstanbul','Kadıköy', 119,31270,'Türkiye','Barış Cd.'); 
+ INSERT INTO Adresler Values ('Gaziantep','Şehitkamil', 28,52160,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Konya','Selçuklu', 50,34902,'Türkiye','Mevlana Cd.'); 
+ INSERT INTO Adresler Values ('Antalya','Aksu', 90,72777,'Türkiye','Mevlana Cd.'); 
+ INSERT INTO Adresler Values ('İzmir','Karşıyaka', 38,28159,'Türkiye','Şehitler Cd.'); 
+ INSERT INTO Adresler Values ('İstanbul','Üsküdar', 8,7698,'Türkiye','Mevlana Cd.'); 
+ INSERT INTO Adresler Values ('İzmir','Konak', 66,11971,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Ankara','Etimesgut', 9,31513,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Bursa','Nilüfer', 80,11529,'Türkiye','Şehitler Cd.'); 
+ INSERT INTO Adresler Values ('Adana','Yüreğir', 27,41344,'Türkiye','Gül Sk.'); 
+ INSERT INTO Adresler Values ('Konya','Selçuklu', 86,39568,'Türkiye','Lale Sk.'); 
+ INSERT INTO Adresler Values ('Ankara','Çankaya', 59,80676,'Türkiye','Cumhuriyet Cd.'); 
+ INSERT INTO Adresler Values ('Ankara','Etimesgut', 28,65371,'Türkiye','İnönü Sk.'); 
+ INSERT INTO Adresler Values ('Adana','Seyhan', 113,32478,'Türkiye','Gül Sk.'); 
+ INSERT INTO Adresler Values ('İzmir','Buca', 107,70820,'Türkiye','Gül Sk.'); 
+
+ SELECT * FROM Adresler
+
