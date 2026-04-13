@@ -1,0 +1,3 @@
+="INSERT INTO Kitaplar VALUES ('"&B48&"',"&C48&",'"&METNEÇEVİR(D48;"yyyy-aa-gg ss:dd:ss")&"');"
+
+=" INSERT INTO Uyeler VALUES ('"&B2&"', '"&C2&"', '"&D2&"', '"&E2&"','"&F2&"', "&G2&");  "
