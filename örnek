@@ -1,0 +1,29 @@
+select * from Adresler
+select * from Uyeler
+select * from kitaplar
+select * from kutuphane
+
+select * from Adresler
+where mahalle like '%B%'
+order by postakodu desc
+
+select * from Uyeler
+order by uyeNo asc
+
+select * from Adresler
+where adresNo =41
+
+select * from Uyeler
+where adresNo =41 and 
+(telefon like '%6%' or telefon like '%9%')
+
+select * from Uyeler
+where telefon like '%6%'and 
+(adresNo =41 or adresNo =61)
+
+
+select ('Sn.' + uyeAdi + '     '+ uyeSoyadi) from uyeler
+where LEN(uyeSoyadi) >6
+
+select Sehir from Adresler
+order by Sehir asc 
