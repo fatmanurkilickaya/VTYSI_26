@@ -1,0 +1,36 @@
+create database ogrenciBilgiSistemi
+use ogrenciBilgiSistemi
+create table bolum(
+bolum_id int primary key not null identity(1,1),
+bolum_ad nvarchar(50)
+);
+create table ogrenci(
+ogr_no int primary key not null identity(1,1),
+bolum_id int foreign key (bolum_id) references bolum(bolum_id),
+ogr_adi nvarchar(50),
+ogr_soyadi nvarchar(50),
+adres nvarchar(150)
+);
+
+insert into ogrenci values (1,'Fatma Nur', 'Kılıçkaya','Kayseri');
+insert into ogrenci values (2,'Şeyma', 'Karasakal','Kayseri');
+insert into ogrenci values (1,'Semiha', 'Doğan','Kayseri');
+insert into ogrenci values (3,'Ceren', 'Yıldırım','Kayseri');
+
+
+insert into bolum values ('Bilgisayar');
+insert into bolum values ('mekatronik');
+insert into bolum values ('elektrik');
+
+select * from bolum 
+select * from ogrenci
+
+select (ogrenci.ogr_adi + '' + ogrenci.ogr_soyadi) as ogrenci, 
+bolum.bolum_ad as bolum
+from ogrenci
+join bolum on ogrenci.bolum_id = bolum.bolum_id
+where ogrenci.adres = 'Kayseri' and bolum.bolum_ad = 'bilgisayar'
+
+select o.ogr_adi, o.ogr_soyadi, b.bolum_ad from ogrenci as o
+join bolum as b on b.bolum_id = o.bolum_id
+where o.adres = 'Kayseri' and b.bolum_ad= 'bilgisayar'
