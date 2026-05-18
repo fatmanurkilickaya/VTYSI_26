@@ -1,0 +1,59 @@
+create database galeri
+use galeri
+create table musteri(
+mNo int identity(1,1) not null primary key,
+mAdi nvarchar(50),
+mSoyadi nvarchar(50),
+mAdres nvarchar(150),
+mTelefon nvarchar(50)
+);
+
+
+insert into musteri values ('Fatma Nur', 'Kılıçkaya','Kayseri','555')
+select * from musteri where mNo = 1
+
+create table araclar(
+aracNo int identity(1,1) not null primary key,
+model nvarchar(50),
+Marka nvarchar(50),
+Plaka nvarchar(150),
+Fiyat float,
+yil date 
+);
+
+create table satislar(
+aracNo int foreign key(aracNo) references araclar(aracNo),
+satisNo int primary key not null identity(1,1),
+mNo int foreign key(mNo) references musteri(mNo),
+sTarih datetime,
+sFiyat float
+);
+create table alislar(
+aracNo int foreign key(aracNo) references araclar(aracNo),
+alisNo int primary key not null identity(1,1),
+mNo int foreign key(mNo) references musteri(mNo),
+aTarih datetime,
+aFiyat float
+);
+use galeri
+select * from araclar;
+select * from musteri;
+select * from satislar;
+select * from alislar
+
+insert into araclar values('fiesta', 'ford', '45R1315',125, convert(datetime,'18-06-12 10:34:09 PM',5))
+insert into alislar values(1,1,convert(datetime,'18-06-12 10:34:09 PM',5),250)
+insert into satislar values(1,1,convert(datetime,'20-06-12 10:34:09 PM',5),500)
+
+select m.mAdi, m.mSoyadi, ar.Marka, ar.model
+from musteri as m
+join alislar as a on m.mNo = a.mNo
+join araclar as ar on ar.aracNo = a.aracNo
+where m.mAdres = 'Kayseri'
+
+select m.mAdi, m.mSoyadi, ar.Marka, ar.model
+from musteri as m
+join satislar as s on m.mNo = s.mNo
+join araclar as ar on ar.aracNo = s.aracNo
+where m.mAdres = 'istanbul' and ar.Marka = 'audi'
+select * from araclar where yil<convert(datetime,'18-06-20 10:34:09 PM',5)
